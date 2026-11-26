@@ -9,3 +9,6 @@ service-account*.json
 .venv/
 __pycache__/
 *.py[cod]
+
+# Follow-up notes that stay on this machine.
+local/

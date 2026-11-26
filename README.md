@@ -125,7 +125,7 @@ URL=$(gcloud run services describe recsys-api --region us-central1 --format='val
 python serving/loadtest.py "$URL"
 ```
 
-The script warms users 1, 2, and 3, then times users 1–200. A missing embedding is a 404 and is skipped. Anything else aborts.
+The script warms users 1, 2, and 3, then times users 1–200. A user the feature store does not know is not a 404. If that id has rows in `movielens.ratings`, the API averages the embeddings of the movies they liked, L2-normalises that vector, and runs the same Vector Search and ranker path. `user_source` is `ratings`. With no ratings, the response is the most-rated movies and `user_source` is `popular`. Anything other than 200 aborts the load test.
 
 ## Stop the hourly bill
 
