@@ -1,0 +1,6 @@
+{
+  "model": "projects/995681516439/locations/us-central1/models/7919360592161275904",
+  "version": "5",
+  "endpoint": "projects/995681516439/locations/us-central1/endpoints/3465691986831343616",
+  "test_rmse": 0.721
+}

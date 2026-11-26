@@ -1,0 +1,6 @@
+{
+  "store": "projects/995681516439/locations/us-central1/featureOnlineStores/recsys_online",
+  "view": "projects/995681516439/locations/us-central1/featureOnlineStores/recsys_online/featureViews/user_features",
+  "store_id": "recsys_online",
+  "view_id": "user_features"
+}
